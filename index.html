@@ -95,7 +95,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="https://velog.io/@howay96/MatchSum" class="image"><img src="./matchsum" alt=""></a>
+											<a href="https://velog.io/@howay96/MatchSum" class="image"><img src="./matchsum.png" alt=""></a>
 											<h3>MatchSum 문서요약</h3>
 											<p>Google Colab에서 MatchSum 논문 그대로 Training을 진행하는데에 어려움이 있어 Model Framework와 데이터 셋 preprocessing에 중점을 두어 진행하였습니다. 학습의 핵심인 Candidate 추출 과정에서, 기사의 Pruning을 논문에서 사용한 BertExt로 점수를 부여해 진행하는 방식이 아닌, BertSum에서의 Oracle Summary 생성에 사용되는 Greedy-Selection과 Combination-Selection을 변형하여 사용하였고, 각 기사당 20개의 Candidate Summary을 생성하였습니다. 모델은 기사와 Gold Summary/Candidate Summary을 매칭하기 위해 CLS 토큰 벡터가 사용되며 Loss function으로는 MarginRankingLoss가 사용됩니다.
 </p>
@@ -104,7 +104,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="https://velog.io/@howay96/Korean-Hate-Speech-Detection" class="image"><img src="./hatespeech" alt=""></a>
+											<a href="https://velog.io/@howay96/Korean-Hate-Speech-Detection" class="image"><img src="./hatespeech.png" alt=""></a>
 											<h3>한국어 Hate Speech Detection</h3>
 											<p>Kaggle Hate Speech Detection Competition을 위해 kcELECTRA-base discriminator을 주어진 데이터 셋을 사용해, 문장을 hate/offensive/none 세가지 Label로 분류하는 Multi-Class Classifier을 Fine-Tuning 하였습니다. 모델은 CLS토큰 벡터를 Classification Head로 통과시키며 Dev Set에 대해서는 74%의 정확도를, Test Set에 대해서는 Kaggle 점수 0.664점으로 표시 되었습니다.</p>
 											<ul class="actions">
@@ -112,7 +112,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="https://velog.io/@howay96/Boyer-Moore-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%A4%EC%B9%AD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="image"><img src="./boyermoore" alt=""></a>
+											<a href="https://velog.io/@howay96/Boyer-Moore-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%A4%EC%B9%AD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" class="image"><img src="./boyermoore.png" alt=""></a>
 											<h3>Boyer-Moore 문자열 매칭</h3>
 											<p>Exact Pattern Matching에 사용되는 Boyer-Moore 알고리즘을 구현하였습니다. Bad Character heuristic와 Good Suffix heuristic 두가지를 Preprocessing을 통해 문자열 매칭을 진행합니다.</p>
 											<ul class="actions">
@@ -130,7 +130,7 @@
 									</header>
 									<div class="posts">
 										<article>
-											<a href="https://github.com/hpark46/Automated-Reasoning" class="image"><img src="./automated" alt=""></a>
+											<a href="https://github.com/hpark46/Automated-Reasoning" class="image"><img src="./automated.png" alt=""></a>
 											<h3>Automated Reasoning</h3>
 											<p>명제 논리 추론 알고리즘 연습을 위해 Backus-Naur Form 문법을 나타낼수 있는 구조를 만들었고, 첫번째 추론 방법은 진리표 enumeration 알고리즘을 구현 하였습니다. 모든 AtomicSentence 에 True/False 값을 부여해 지식베이스가 쿼리를 entail 하는지 판단합니다. 두번째 추론 방식으로는 지식베이스와 쿼리의 문법을 논리곱 정규형으로 변형해 대입하는 귀류법을 기반으로 한 Resolution 알고리즘을 구현하였습니다. 대입하는 문법 표현 시 몇가지 제약이 있지만 올바른 인풋으로는 성공적으로 쿼리가 entail 될수 있는지 리턴합니다.</p>
 											<ul class="actions">
@@ -138,19 +138,19 @@
 											</ul>
 										</article>
 										<article>
-											<a href="https://hpark46.github.io/" class="image"><img src="./bayesian" alt=""></a>
+											<a href="https://hpark46.github.io/" class="image"><img src="./bayesian.png" alt=""></a>
 											<h3>Uncertain Inference</h3>
 											<p>Bayesian Network structure을 구현한 뒤, 세가지 추론 알고리즘을 구현하였습니다. Enumeration을 이용한 첫번째 Exact Inference 알고리즘은 XMLBIF 파일에서 주어진 Evidence에 의거하여 각 쿼리 variable의 확률을 리턴합니다. 그 다음으로 Approximate Inference을 위해서는 Prior Distribution을 기반으로 모든 Event를 생성해 Evidence와 상반되는 Event를 제거하는 Rejection Sampling을 구현하고, 이후 Evidence와 일정한 Event만 생성해 Rejection Sampling의 비효율성을 보완하는 Likelihood-weighting 알고리즘을 구현하였습니다.</p>
 											
 										</article>
 										<article>
-											<a href="https://hpark46.github.io/" class="image"><img src="./linearclassifier" alt=""></a>
+											<a href="https://hpark46.github.io/" class="image"><img src="./linearclassifier.png" alt=""></a>
 											<h3>Decision Tree Learing &amp; Linear Classifiers</h3>
 											<p>Information Gain의 최대화 하는 Attribute 선정 방법을 포함한 Entropy based Decision tree을 구현하였습니다. 알고리즘은 Overfitting을 방지하기 위해 관련 없는 Node를 Prune 하며, 학습시 tree의 정확도를 모니터 하였습니다. 추가로, Perceptron Learning Rule과 Hard Threshold을 사용하는 Classifier와, Logistic Regression을 바탕으로 분류하는 Classifier을 구현하여, Clean/Noisy 데이터와 Learning Rate가 학습에 미치는 영향을 학습할수 있는 계기가 되었습니다.</p>
 											
 										</article>
 										<article>
-											<a href="https://hpark46.github.io/" class="image"><img src="./database" alt=""></a>
+											<a href="https://hpark46.github.io/" class="image"><img src="./database.png" alt=""></a>
 											<h3>보험회사를 위한 모의 데이터베이스</h3>
 											<p>HTML과 PHP를 사용해 로컬 서버에 생명보험 정보를 보고 편집할 수 있는 웹페이지를 만들었습니다. 데이터베이스는 MySQL로 구축되었 으며, 데이터는 여섯 가지의 Entities와 다섯 가지의 Relationships로 이루어져 있습니다. 고객 계정으로 사이트에 접속하는 경우 non-key attributes를 수정 할 수 있는 권한을 가지게 되며, 고객의 건강 기록을 바탕으로 추천하는 보험 상품들이 소개됩니다.직원 계정은 더 많은 권한을 가지며 모든 데이터를 추가, 제거, 수정할 수 있는 권한을 가지게 됩니다. 프로젝트를 진행하면서 ER diagram, Relationship type mapping, 하고 데이터베이스의 시각화를 연습 할 기회가 되었습니다.</p>
 											
